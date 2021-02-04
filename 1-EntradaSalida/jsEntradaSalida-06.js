@@ -5,9 +5,18 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar() {
 	let numeroUno;
 	let numeroDos;
+	let total;
+	let mensaje;
 
-	numeroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
-	numeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
 	total = numeroUno + numeroDos;
-	alert("La suma es " + total);
+
+	mensaje = "El resultado es " + total;
+	alert(mensaje);
+	console.log(mensaje);
 }
