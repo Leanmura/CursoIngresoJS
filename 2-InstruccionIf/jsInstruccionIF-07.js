@@ -1,8 +1,4 @@
-function mostrar()
-{
-	//tomo la edad  
+function mostrar() {
+	//tomo la edad
 	alert("ok");
-	
-
-
-}//FIN DE LA FUNCIÓN
+} //FIN DE LA FUNCIÓN
