@@ -2,17 +2,17 @@ function mostrar()
 {
 	let estacionIngresada = document.getElementById('txtIdEstacion').value;
 	let destinoIngresado = document.getElementById('txtIdDestino').value;
-	let seViaja;
+
 	switch (estacionIngresada)
 	{
 		case 'Invierno':
 			switch (destinoIngresado)
 			{
 				case 'Bariloche':
-					seViaja = 1;
+					alert("Se viaja");
 					break;
 				default:
-					seViaja = 0;
+					alert("No se viaja");
 			}
 			break;
 
@@ -21,10 +21,10 @@ function mostrar()
 			{
 				case 'Cataratas':
 				case 'Mar del plata':
-					seViaja = 1;
+					alert("Se viaja");
 					break;
 				default:
-					seViaja = 0;
+					alert("No se viaja");
 			}
 			break;
 
@@ -32,26 +32,15 @@ function mostrar()
 			switch (destinoIngresado)
 			{
 				case 'Bariloche':
-					seViaja = 0;
+					alert("No se viaja");
 					break;
 				default:
-					seViaja = 1;
+					alert("Se viaja");
 			}
 			break;
 
 		case 'Otoño':
-			seViaja = 1;
+			alert("Se viaja");
 			break;
 	}
-
-	if (seViaja == 1)
-	{
-		alert("Se viaja");
-	}
-	else
-	{
-		alert("No se viaja");
-	}
-
-
 }//FIN DE LA FUNCIÓN
