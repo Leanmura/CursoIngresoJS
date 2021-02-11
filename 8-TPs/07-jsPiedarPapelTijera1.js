@@ -8,22 +8,64 @@ var eleccionMaquina;
 
 function comenzar()
 {
-	
+    eleccionMaquina = Math.floor(Math.random() * 4) + 1; //Genero el número RANDOM entre 1 y 100
+    alert("Ha comenzado el juego");
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+    switch (eleccionMaquina)
+    {
+        case 1:
+            alert("PIEDRA!!!");
+            alert("Empate.");
+            break;
+        case 2:
+            alert("PAPEL...");
+            alert("Perdiste.");
+            break;
+        case 3:
+            alert("Tijeraaa");
+            alert("Ganaste.");
+    }
 
 }//FIN DE LA FUNCIÓN
 function papel()
 {
+    switch (eleccionMaquina)
+    {
+        case 1:
+            alert("PIEDRA!!!");
+            alert("Ganaste.");
+            break;
+        case 2:
+            alert("PAPEL...");
+            alert("Empate.");
+            break;
+        case 3:
+            alert("Tijeraaa");
+            alert("Perdiste");
+    }
 
 
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
+    switch (eleccionMaquina)
+    {
+        case 1:
+            alert("PIEDRA!!!");
+            alert("Perdiste.");
+            break;
+        case 2:
+            alert("PAPEL...");
+            alert("Ganaste.");
+            break;
+        case 3:
+            alert("Tijeraaa");
+            alert("Empate.");
+    }
+
 
 }//FIN DE LA FUNCIÓN
