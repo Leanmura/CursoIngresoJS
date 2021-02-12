@@ -30,7 +30,8 @@ function mostrar()
 			{
 				numeroMaximo = numeroIngresado;
 			}
-			else
+			//no va else por que puede ser que no sea el maximo ni el minimo
+			if (numeroIngresado < numeroMinimo)
 			{
 				numeroMinimo = numeroIngresado;
 			}
