@@ -30,7 +30,7 @@ function mostrar()
 	}
 
 
-	txtIdSuma.value = sumaPositivos;
-	txtIdProducto.value = multiplicacionNegativos;
+	document.getElementById('txtIdSuma').value = sumaPositivos;
+	document.getElementById('txtIdProducto').value = multiplicacionNegativos;
 
 }//FIN DE LA FUNCIÓN

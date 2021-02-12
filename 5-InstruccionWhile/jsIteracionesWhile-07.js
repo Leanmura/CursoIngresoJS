@@ -8,6 +8,7 @@ function mostrar()
 	var contador;
 	var acumulador;
 	var respuesta;
+	let promedio;
 	contador = 0;
 	acumulador = 0;
 	respuesta = 'si';
@@ -20,7 +21,9 @@ function mostrar()
 		acumulador = numeroIngresado + acumulador;
 		respuesta = prompt("Desea seguir ingresando numeros? ");
 	}
+
+	promedio = acumulador / contador;
 	txtIdSuma.value = acumulador;
-	txtIdPromedio.value = acumulador / contador;
+	txtIdPromedio.value = promedio;
 
 }//FIN DE LA FUNCIÓN

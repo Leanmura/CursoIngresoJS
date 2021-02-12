@@ -7,6 +7,7 @@ function mostrar()
 	var contador;
 	var acumulador;
 	var numeroIngresado;
+	let promedio;
 
 	contador = 0;
 	acumulador = 0;
@@ -19,6 +20,7 @@ function mostrar()
 		acumulador = numeroIngresado + acumulador;
 	}
 
+	promedio = acumulador / contador;
 	txtIdSuma.value = acumulador;
-	txtIdPromedio.value = acumulador / 5;
+	txtIdPromedio.value = promedio;
 }//FIN DE LA FUNCIÓN
