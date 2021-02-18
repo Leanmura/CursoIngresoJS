@@ -2,7 +2,7 @@
 Murakoshi Leandro
 Parcial 2018 ejercicio 9
 Enunciado:
-Bienvenidos.
+Bienvenidos
 Realizar el algoritmo que permita ingresar la marca del producto, el peso el cual debe ser entre 1 y 100 (validar),
 la temperatura de almacenamiento(entre -30 y 30) hasta que el usuario quiera e informar al terminar el ingreso por document.write:
 a) La cantidad de temperaturas pares.
