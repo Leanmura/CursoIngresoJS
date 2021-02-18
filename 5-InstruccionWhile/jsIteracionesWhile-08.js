@@ -7,10 +7,14 @@ function mostrar()
 	var respuesta;
 	var sumaPositivos;
 	var multiplicacionNegativos;
+	//var contadorNegativos;
+	var banderaNegativos;
 
+	banderaNegativos = 0;
 	sumaPositivos = 0;
 	multiplicacionNegativos = 1;
 	respuesta = 'si';
+	//contadorNegativos = 0;
 
 	while (respuesta == 'si')
 	{
@@ -24,11 +28,18 @@ function mostrar()
 		else
 		{
 			multiplicacionNegativos = numeroIngresado * multiplicacionNegativos;
+			banderaNegativos = 1;
+			//contadorNegativos++;
 		}
 
 		respuesta = prompt("Desea seguir ingresando numeros? ");
 	}
 
+	//Si pero....(la otra es mejor) if(contadorNegativos == 0)
+	if (banderaNegativos == 0)
+	{
+		multiplicacionNegativos = 0;
+	}
 
 	document.getElementById('txtIdSuma').value = sumaPositivos;
 	document.getElementById('txtIdProducto').value = multiplicacionNegativos;
