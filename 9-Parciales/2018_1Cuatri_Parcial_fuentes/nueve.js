@@ -41,9 +41,9 @@ function mostrar()
     pesoMaximo = 0;
     cantidadTemperaturasPares = 0;
 
-    do
+    do 
     {
-        cantidadProductos++;
+        //INGRESO DE VARIABLES Y VALIDACION
         marca = prompt("Ingresar la marca del producto: ");
 
         peso = prompt("Ingresar el peso del producto (debe estar entre 1kg y 100kg): ");
@@ -54,6 +54,19 @@ function mostrar()
             peso = prompt("Error, el peso debe estar entre 1kg y 100kg. \nPor favor reingrese el peso de su producto: ")
             peso = parseInt(peso);
         }
+
+        temperatura = prompt("Ingresar la temperatura de su producto (debe estar entre -30° y 30°): ");
+        temperatura = parseInt(temperatura);
+        while (isNaN(temperatura) || temperatura < -30 || temperatura > 30)
+        {
+            temperatura = prompt("Error, la temperatura del producto debe estar entre -30° y 30°. \nPor favor reingrese la temperatura de su producto: ");
+            temperatura = parseInt(temperatura);
+        }
+        //FIN DE VALIDACION
+
+        cantidadProductos++;
+        totalPeso = promedioPeso + peso;
+
         if (cantidadProductos == 1)
         {
             pesoMaximo = peso;
@@ -73,15 +86,6 @@ function mostrar()
             }
         }
 
-        totalPeso = promedioPeso + peso;
-
-        temperatura = prompt("Ingresar la temperatura de su producto (debe estar entre -30° y 30°): ");
-        temperatura = parseInt(temperatura);
-        while (isNaN(temperatura) || temperatura < -30 || temperatura > 30)
-        {
-            temperatura = prompt("Error, la temperatura del producto debe estar entre -30° y 30°. \nPor favor reingrese la temperatura de su producto: ");
-            temperatura = parseInt(temperatura);
-        }
         if (temperatura % 2 == 0)
         {
             cantidadTemperaturasPares++;
@@ -96,6 +100,7 @@ function mostrar()
 
     promedioPeso = totalPeso / cantidadProductos;
 
+    //SALIDA DE DATOS
     document.write("Cantidad de temperaturas pares: " + cantidadTemperaturasPares);
     document.write("<br>Marca del producto mas pesado: " + marcaMasPesado);
     document.write("<br>Cantidad de productos que se conservan a menos de 0°: " + cantidadProductosMenosCeroGrados);
