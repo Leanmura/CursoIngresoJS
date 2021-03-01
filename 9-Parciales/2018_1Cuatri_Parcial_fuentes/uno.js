@@ -1,5 +1,5 @@
 /*
-Leandro Murakoshi
+Leandro Murakoshi 1:30hs
  Para un censo municipal debemos cargar los datos de TODAS las mascotas de nuestra veterinaria
 necesitan saber si es un gato o un perrro u "otra cosa",(solo hay esos tres tipos)
 el tipo de pelaje (corto, largo , sin pelo),
